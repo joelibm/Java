@@ -1,0 +1,8 @@
+/* Joel Blackman-Mathis, Budget Calculator, Start Date: 1/13/16, Last Modified: 1/13/16 */
+public class  P1A1_BlackmanMathis_3586882 
+{ 
+   public static void main(String[] args) 
+   { 
+      System.out.println("Welcome. My name is Joel. This program will help you calculate your budget.");
+   }
+}
