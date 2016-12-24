@@ -142,7 +142,7 @@ public class connect4
 		}
 		return cell;
 	}
-	public static int choose(int player) { //try catch isnt working
+	public static int choose(int player) { 
 		boolean success = false;
 		int column = 0;
 		System.out.println("Player "+player+", place piece in which row? (1-7)");
