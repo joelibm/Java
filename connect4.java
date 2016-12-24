@@ -287,7 +287,7 @@ public class connect4
 		}
 		while (played == false){  //random play
 			int n = rand.nextInt(6);
-			if (cell[n][0] == 0 && cell[n][1] == 0){
+			if (cell[n][0] == 0 && cell[n][1] == 0){ //avoids traps
 				play(copy, n, 2);
 				play(copy, n, 1);
 				if(victory(copy, 1)){
