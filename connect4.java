@@ -145,7 +145,7 @@ public class connect4
 	public static int choose(int player) { 
 		boolean success = false;
 		int column = 0;
-		System.out.println("Player "+player+", place piece in which row? (1-7)");
+		System.out.println("Player "+player+", place piece in which column? (1-7)");
 		while (success == false){
 			try{
 				column = Integer.parseInt(System.console().readLine());
@@ -258,7 +258,7 @@ public class connect4
 					if(victory(copy, 2)){
 						undo(copy, column, 2);
 						play(cell, column, 2);
-						System.out.println(column);
+						System.out.println(column+1);
 						played = true;
 						break;
 					}
@@ -275,7 +275,7 @@ public class connect4
 					if(victory(copy, 1)){
 						undo(copy, column, 1);
 						play(cell, column, 2);
-						System.out.println(column);
+						System.out.println(column+1);
 						played = true;
 						break;
 					}
@@ -290,7 +290,7 @@ public class connect4
 			if (cell[n][0] == 0 && cell[n][1] == 0){ //avoids traps
 				play(copy, n, 2);
 				play(copy, n, 1);
-				if(victory(copy, 1)){
+				if(victory(copy, 1)){ 
 					undo(copy, n, 1);
 					undo(copy, n, 2);
 					played = false;
